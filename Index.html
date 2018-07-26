@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Eureka Caffe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="images/images.png" rel ="shortcut icon">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src ="Index.js"></script>
+</head>
+
+<body>
+  <div class = "top" color ="white">
+    <nav class ="navbar navbar-expand-sm justify-content-end">
+      <a class="nav-item"  id ="nav-img"><img src ="images/coffe.jpg" height="60" width="60" ><strong>Eureka Caffe</strong></a>
+      <ul class= "navbar-nav" >
+        <li class = "nav-item">
+          <a class ="nav-link" href = "#link">Home <span style="color:orangered">&middot</span></a>
+        </li>
+        <li class = "nav-item" >
+          <a class ="nav-link" href = "#link" >About <span style="color:orangered">&middot</span></a>
+        </li>
+        <li clas = "nav-item">
+          <a class = "nav-link" href = "#link" >Service <span style="color:orangered">&middot</span></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href = "#link" >Blog <span style="color:orangered">&middot</span></a> 
+        </li>
+        <li class ="nav-item">
+          <a class = "nav-link" href = "#link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  <div class="jumbotron" style="background-color: transparent">
+  <h1 align ="center"  clas = "top" >Ordering Food</h1>
+  <p align="center" >Maecenas vel tellus at magna sagittis venenatis.Integer pretium auctor<br> magna, egestas justo gravida vitae.In lacinia auctor auctor</p>
+</div>
+</div>
+
+
+<div>
+
+  <nav class ="navbar navbar-expand-sm bg-light navbar-light">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown" >
+        <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle= "dropdown">  <strong>Category</strong>    </a>
+        <div class = "dropdown-menu">
+          <button class ="dropdown-item" href ="#" onclick="showCategory('Entrees')" id="entrees">Entrees</button>
+          <button class ="dropdown-item" href ="#" onclick="showCategory('Salads')">Salads</button>
+          <button class ="dropdown-item" href ="#" onclick ="showCategory('Second Courses')">Second Courses</button>
+          <button class ="dropdown-item" href ="#" onclick ="showMenuAfter()">Show Menu</button>
+        </div>
+  
+      </li> 
+      <li class ="nav-item dropdown">
+        <a class= "nav-link dropdown-toggle" href ="#" id ="navbardrop" data-toggle ="dropdown"><strong>Sorting</strong></a>
+        <div class = "dropdown-menu">
+          <a class ="dropdown-item" href ="#" onclick="sort('asc')">Ascending</a>
+          <a class ="dropdown-item" href ="#" onclick="sort('desc')">Descending</a>
+        </div>
+      </li>
+      
+      <li class= "nav-item dropdown">
+        <a class = "nav-link dropdown-toggle" href = "#" id ="navbardrop" data-toggle ="dropdown"><strong>Vegetarian</strong></a>
+        <div class ="dropdown-menu">
+          <a class =" dropdown-item" href ="#" onclick="veg()">Vegetarian Food</a>
+          <a class =" dropdown-item" href ="#" onclick ="showMenuAfter()">Show Menu</a>
+        </div>
+      </li>
+    </ul>
+<ul class="ml-auto">
+  
+    <span id="slider-price"><p>Price<span class="rangeValues"></span></p>
+  
+  <section class="range-slider">
+    <span class="rangeValues"></span>
+    
+    <input value="50" min="0" max="150"  type="range">
+    <input value="10" min="0" max="150"  type="range">
+  </section>
+</ul>
+
+     
+  </nav>
+
+
+
+<div class= "container pt-5">
+  <div class = "row" id ="first"   >
+    
+    
+  </div>
+
+</div>
+<footer>
+  <h3 class ="text-center">Amarok Team</h3>
+</footer>
+</body>
+</html>
